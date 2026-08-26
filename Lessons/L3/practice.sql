@@ -1,11 +1,16 @@
-SELECT job_title, salary_year_avg * 0.8 avg, salary_year_avg * 1.2 avg_salary, job_work_from_home 
+SELECT 
+    job_title, 
+    salary_year_avg * 0.8 avg, 
+    salary_year_avg * 1.2 avg_salary, 
+    job_work_from_home 
 FROM job_postings_fact
 where (job_title like '%Data Engineer%' or job_title like '%Data Analyst%') 
 and job_work_from_home = True
 and  salary_year_avg IS NOT NULL
 LIMIT 10;
-
+/*
  برای اینکه بفهمیم در هر کشور، میانگین حقوق چقدر است و چند آگهی ثبت شده است:
+*/
 
  SELECT count (*) count_of_ad,job_location,  AVG(salary_year_avg) avg
  from job_postings_fact
