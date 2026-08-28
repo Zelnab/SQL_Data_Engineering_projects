@@ -92,3 +92,5 @@ FROM data_jobs.job_postings_fact AS jpf
 LEFT JOIN data_jobs.company_dim AS cd
 	ON jpf.company_id = cd.company_id
 WHERE job_posted_date >='2024-01-01';
+
+

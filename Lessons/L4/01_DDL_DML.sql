@@ -57,5 +57,8 @@ UPDATE staging.priority_roles
 SET priority_lvl=3
 WHERE rol_id=3;
 
+INSERT INTO staging.priority_roles(role_id,role_name,priority_lvl)
+VALUES
+(4,'Data Scientist',3);
 
 SELECT * FROM staging.priority_roles;
