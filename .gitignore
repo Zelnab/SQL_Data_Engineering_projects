@@ -1,4 +1,7 @@
+-- don't show on github
+
 Lessons/
+
 
 # 🗄️ Local databases
 *.duckdb
