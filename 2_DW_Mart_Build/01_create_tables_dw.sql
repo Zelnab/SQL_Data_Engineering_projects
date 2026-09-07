@@ -1,3 +1,5 @@
+-- step 1: DW - create star schema tables
+
 
 DROP TABLE IF EXISTS skills_job_dim;
 DROP TABLE IF EXISTS job_postings_fact;
