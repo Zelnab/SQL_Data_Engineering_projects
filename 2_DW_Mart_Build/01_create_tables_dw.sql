@@ -12,10 +12,7 @@ DROP TABLE IF EXISTS skills_dim;
 --Create company_dim table
 CREATE TABLE company_dim (
     company_id INTEGER PRIMARY KEY,
-    name VARCHAR,
-    link VARCHAR,
-    link_google VARCHAR,
-    thumbnail VARCHAR
+    name VARCHAR
 );
 
 -- Create skills_dim table
