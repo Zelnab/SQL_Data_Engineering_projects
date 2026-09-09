@@ -59,7 +59,6 @@ SELECT * from company_dim LIMIT 5;
 SELECT '===  skills dim sample ===' as info;
 SELECT * from skills_dim LIMIT 5;
 SELECT '=== job postings fact sample ===' as info;
-SELECT * from SELECT 'Job Postings Fact', count(*) FROM job_postings_fact
- LIMIT 5;
+SELECT *  FROM job_postings_fact LIMIT 5;
 SELECT '===skills job dim sample ===' as info;
 SELECT * from skills_job_dim LIMIT 5;
